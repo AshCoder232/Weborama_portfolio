@@ -1,0 +1,429 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root{
+    font-size: 14px;
+}
+/* Custom Properties */
+body{
+    margin: 0;
+    padding:0;
+    
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.heading{
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.navbar{
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    position:absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    z-index: 100;
+   
+}
+
+li{
+    list-style-type: none;
+}
+
+.logo{
+    font-size: 1.5rem;
+    margin: .5rem;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-list.show {
+    display: none;
+}
+
+.nav-item{
+    text-decoration: none;
+}
+.nav-link {
+   
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.nav-link:hover{
+    background-color: gray;
+}
+.hamburger{
+    display: none;
+}
+.hamburger:focus{
+    outline: 0;
+}
+
+section{
+    background-color: rgb(255, 255, 255);
+}
+
+.intro-area{
+    display: flex;
+    flex-direction: column;  
+}
+.intro{
+    padding-top: 7vh;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color: #15fc00;
+   
+   
+}
+.intro-text {
+    margin-left: 40px;
+    font-size: 50px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.intro-subtext {
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.button{
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: rgb(0, 252, 13);
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-family:'Source Code Pro', monospace;
+    margin-left: 40px;
+   
+    
+    
+}
+.button:hover {
+    background-color: #59ef4b;
+}
+
+.button:active {
+    background-color: #A9A9A9;
+    color: #808080;
+}
+.btn-link{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    background-color: rgb(233, 196, 196);
+    height: 500px;
+}
+
+.services{
+    background-color: black;
+    background-image: url(/images/p1.jpeg);
+    background-size: cover;
+    
+    color: white;
+    margin: 0 auto;
+    display: grid;
+    
+
+}
+.services-title{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'ubuntu', sans-serif;
+}
+.services-title::after{
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    background-color: #59ef4b;
+    margin:0.5em auto 1em;
+   
+}
+.serv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+    flex-wrap: wrap;
+}
+.service{
+    margin: 8px 20px 10px 20px;
+    width: 350px;
+    height: 350px;
+}
+h3{
+    font-size: 2em;
+}
+.work-desc{
+    font-size: 1rem;
+}
+.about-title{
+    font-size: 3rem;
+    font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+}
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+   
+}
+.about-desc{
+    font-size: 2em;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile-div {
+    width: 300px;
+    border-radius: 150px;
+
+}
+
+
+.social-item{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+
+}
+#profile-link{
+    width: 4rem;
+    height: 3.84rem;
+    white-space:normal;
+    padding: 8px 16px 8px 16px;
+
+}
+#profile-link:hover{
+    background-color: rgb(94, 23, 112);
+    transform: scale(1.05);
+}
+.work1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+.project-title{
+    font-size: 3rem;
+}
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+   
+}
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    height: 200px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.content {
+  background: rgb(24, 7, 51);
+  color: white;
+}
+h1 {
+  padding-top: 10px;
+  font-size: 2em;
+  text-align: center;
+}
+#social-link {
+  text-decoration: none;
+      
+}
+  
+p {
+  font-size: 1.5em;
+}
+.contactinfo {
+  padding-top: 100px;
+  
+}
+.infotext {
+  padding: 10px 150px 50px 150px;
+  text-align: center;
+}
+#infosize {
+  font-size: 2em;
+}
+#contact-line {
+  border: 0;
+  padding: 1px 10px 5px 10px;
+  height: 5px;
+  background-image: -webkit-linear-gradient(left, orange, black, orange);
+  background-image: -moz-linear-gradient(left, orange, black, orange);
+}
+#icon {
+  font-size: 1.5em;
+}
+ 
+/*footer       */
+.footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px ;
+    margin-top: -2rem;
+    max-height: 50vh;
+}
+
+
+
+
+.social-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-item{
+    text-decoration: none;
+}
+#profile-link{
+    width:40px;
+    height: 40px;
+
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    .nav-list {
+        display: flex;
+        background-color: #2b2c38;
+        margin: 0px;
+        
+    }
+
+    .nav-list.show {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+        
+    }
+
+    .logo {
+        display: none;
+    }
+
+
+    .services{
+        width : 100%;
+        height: fit-content;
+    }
+    .serv{
+        flex-direction:column;
+
+    }
+   
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 80px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+       
+    }
+
+
+}
+
+
+
+
