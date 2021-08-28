@@ -117,6 +117,7 @@ body{
 
 section{
     background-color: rgb(255, 255, 255);
+    overflow: hidden;
 }
 
 .intro-area{
@@ -128,6 +129,7 @@ section{
     height: 100vh;
     background-color: rgb(0, 0, 0);
     color: #15fc00;
+    overflow: hidden;
    
    
 }
@@ -233,6 +235,7 @@ h3{
     padding: 80px;
     background-color: rgb(0, 0, 0);
     color: white;
+    overflow: hidden;
    
 }
 .about-desc{
@@ -274,6 +277,7 @@ h3{
     flex-direction: column;
     text-align: center;
     padding: 80px;
+    overflow: hidden;
 }
 .project-title{
     font-size: 3rem;
@@ -312,7 +316,9 @@ a {
 }
 
 
-
+.contact{
+    overflow: hidden;
+}
 .content {
   background: rgb(24, 7, 51);
   color: white;
@@ -364,6 +370,7 @@ p {
     padding: 20px ;
     margin-top: -2rem;
     max-height: 50vh;
+    overflow: hidden;
 }
 
 
