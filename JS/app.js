@@ -1,8 +1,6 @@
-const hamburgerButton = document.getElementsByClassName('hamburger')
-const navList = document.getElementsByClassName('nav-list')
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-function toggleButton() {
-    navList.classList.toggle('show')
-}
-
-hamburgerButton.addEventListener('click', toggleButton)
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})

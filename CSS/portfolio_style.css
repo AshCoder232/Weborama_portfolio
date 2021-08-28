@@ -23,28 +23,7 @@ body{
     background-color: rgb(0, 0, 0);
     
 }
-
-.navbar{
-    position: fixed;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    position:absolute;
-    top: 0;
-    left: 0;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(29, 29, 29);
-    color: white;
-    width: 100%;
-    overflow: hidden;
-    z-index: 100;
-   
-}
-
-li{
-    list-style-type: none;
-}
+/* Navbar */
 
 .logo{
     font-size: 1.5rem;
@@ -58,37 +37,82 @@ li{
     text-decoration: none;
 }
 
-.nav-list{
-    list-style: none;
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
     display: flex;
     margin: 0;
     padding: 0;
 }
-.nav-list.show {
-    display: none;
+
+.navbar-links li {
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.nav-item{
-    text-decoration: none;
-}
-.nav-link {
-   
+.navbar-links li a {
     display: block;
     text-decoration: none;
     color: white;
     padding: 1rem;
-    font-family: 'Raleway', sans-serif;
-
+    
 }
 
-.nav-link:hover{
-    background-color: gray;
+.navbar-links li:hover {
+    background-color: #555;
 }
-.hamburger{
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
-.hamburger:focus{
-    outline: 0;
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 section{
@@ -306,6 +330,9 @@ h1 {
 p {
   font-size: 1.5em;
 }
+.contact-title{
+    font-size: 40px;
+}
 .contactinfo {
   padding-top: 100px;
   
@@ -368,38 +395,6 @@ p {
 }
 
 @media only screen and (max-width: 1000px) {
-    
-    .hamburger {
-        display: block;
-        border: 0;
-        background-color: transparent;
-        color: white;
-        font-size: 30px;
-        margin: 20px;
-        align-self: flex-end;
-    }
-
-    .nav-list {
-        display: flex;
-        background-color: #2b2c38;
-        margin: 0px;
-        
-    }
-
-    .nav-list.show {
-        display: block;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: #2b2c38;
-        
-    }
-
-    .logo {
-        display: none;
-    }
 
 
     .services{
@@ -423,6 +418,40 @@ p {
 
 
 }
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
 
 
 
