@@ -182,8 +182,13 @@ section{
 }
 
 .services{
+<<<<<<< HEAD
     
     background-image: url(/images/p1.jpeg);
+=======
+    background-color: black;
+    background-image: url(images/p1.jpeg);
+>>>>>>> 14723bde4920752d6e00e76ee157d25614ac8c1e
     background-size: cover;
     
     color: white;
